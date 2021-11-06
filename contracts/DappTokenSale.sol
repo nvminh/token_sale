@@ -1,17 +1,17 @@
 pragma solidity ^0.5.0;
 
-import "./DappToken.sol";
+import "./MihToken.sol";
 
 contract DappTokenSale {
     address payable admin;
-    DappToken public tokenContract;
+    MihToken public tokenContract;
     uint256 public tokenPrice;
     uint256 public tokensSold;
 
     event Sell(address _buyer, uint256 _amount);
     event EndSale(uint256 _totalAmountSold);
 
-    constructor(DappToken _tokenContract, uint256 _tokenPrice) public {
+    constructor(MihToken _tokenContract, uint256 _tokenPrice) public {
         admin = msg.sender;
         tokenContract = _tokenContract;
         tokenPrice = _tokenPrice;

@@ -13,3 +13,9 @@
 # ASSIGN AN ADMIN
 # BUY TOKENS
 # END SALE
+
+# Start geth:
+geth --rinkeby --http --http.api 'web3,eth,net,debug,personal' --http.corsdomain '*' --allow-insecure-unlock
+
+# Release new contract:
+truffle migrate --reset --network rinkeby

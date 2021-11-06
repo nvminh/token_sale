@@ -1,4 +1,4 @@
-var DappToken = artifacts.require("./DappToken.sol");
+var DappToken = artifacts.require("./MihToken.sol");
 
 contract('DappToken', function(accounts) {
   var tokenInstance;

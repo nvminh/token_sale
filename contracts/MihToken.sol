@@ -1,9 +1,9 @@
 pragma solidity ^0.5.0;
 
-contract DappToken {
-    string  public name = "DApp Token";
-    string  public symbol = "DAPP";
-    string  public standard = "DApp Token v1.0";
+contract MihToken {
+    string  public name = "MIH Token";
+    string  public symbol = "MIH";
+    string  public standard = "MIH Token v1.0";
     uint256 public totalSupply = 75000;
     address public owner;
 
